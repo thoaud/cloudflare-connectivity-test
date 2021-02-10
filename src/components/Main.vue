@@ -2,13 +2,6 @@
   <div class="main-content">
     <div class="container has-text-centered">
       <h1 class="title">Cloudflare datacenter reachability</h1>
-
-      <h2 class="subtitle">
-        <a
-          target="_blank"
-          href="https://github.com/judge2020/cloudflare-connectivity-test/wiki/Explanation"
-        >Explanation</a>
-      </h2>
       <p class="subtitle">Test your website:</p>
       <form @submit.prevent="loadTestHostname(testHostname)">
         <div class="field has-addons has-addons-centered">
@@ -57,24 +50,6 @@
         </div>
       </div>
     </div>
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title"></h1>
-          <h2 class="subtitle">Note: the plan these websites are on is an educated guess.</h2>
-          <p>
-            Pro websites were taken from the
-            <a
-              href="https://developers.cloudflare.com/sponsorships/"
-            >Open Source sponsorships page</a>, Business from the
-            <a href="https://www.cloudflare.com/galileo/">Project Galileo page</a>, and Enterprise from the
-            <a
-              href="https://www.cloudflare.com/case-studies/"
-            >Case Studies page</a>.
-          </p>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 
@@ -92,56 +67,37 @@ export default class Main extends Vue {
   preloaded = false;
   iata = [];
   free = [
-    "judge2020.com",
-    "digital.com",
-    "firing.it",
-    "www.shoutmeloud.com",
-    "judge2020.me",
-    "cloudeereviews.com",
-    "clash.lol"
+    "howfastiswoo.com",
+    "howfastiswoocommerce.com",
+    "perffirst.org",
+    "servebolt.co.uk",
+    "servebolt.co.za",
+    "servebolt.in",
+    "servebolt.io",
+    "servebolt.lt",
+    "servebolt.ru",
+    "serveboly.com",
+    "serverbolt.com",
+    "autobudget.no",
   ];
   pro = [
-    "js.org",
-    "git-scm.com",
-    "nodejs.org",
-    "cdnjs.com",
-    "getbootstrap.com",
-    "reactjs.org",
-    "html5boilerplate.com",
-    "d3js.org"
+    "advhi.no",
   ];
   business = [
-    "judge.sh",
-    "www.mozilla.org",
-    "domjh.net",
-    "manfredi.io",
-    "sontusdatos.org",
-    "www.opentech.fund",
-    "cpj.org",
-    "www.amnestyusa.org",
-    "cdt.org",
-    "www.counterextremism.com",
-    "www.ndi.org",
-    "www.findlaw.com",
-    "www.codeguard.com",
-    "www.techagainstterrorism.org",
-    "www.thetrevorproject.org"
+    "sbte.st",
+    "servebo.lt",
+    "servebolt.co",
+    "allotment.pro",
   ];
   enterprise = [
     "cloudflare.com",
-    "cdnjs.cloudflare.com",
-    "medium.com",
-    "discordapp.com",
-    "www.zendesk.com",
-    "ghost.io",
-    "unpkg.com",
-    "www.loc.gov",
-    "www.artstation.com",
-    "www.digitalocean.com",
-    "quizlet.com",
-    "corporateclash.net",
-    "domjh.com",
-    "i.gyazo.com"
+    "accelerateddomains.com",
+    "r99.no",
+    "servebolt.com",
+    "servebolt.nl",
+    "servebolt.no",
+    "servebolt.se",
+    "audunhus.com",
   ];
   mounted() {
     this.preloadAirports().then(() => {
