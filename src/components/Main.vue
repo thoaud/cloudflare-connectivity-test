@@ -43,7 +43,7 @@
         </div>
       </div>
       <div class="column list-domains">
-        <p class="title">ENTERPRISE</p>
+        <p class="title">ENTERPRISE & ACD</p>
         <div class="domain-item" v-for="(site, index) in enterprise" :key="index">
           <domain-item :hostname="site" />
           <hr />
